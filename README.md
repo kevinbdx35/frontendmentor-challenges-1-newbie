@@ -1,47 +1,66 @@
-# Frontend Mentor - Order summary card solution
+# Frontend Mentor - Solution de la carte de résumé de commande
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Ceci est une solution au [défi Order summary card sur Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Les défis Frontend Mentor vous aident à améliorer vos compétences en codage en créant des projets réalistes.
 
-## Table of contents
+## Table des matières
 
-- [Frontend Mentor - Order summary card solution](#frontend-mentor---order-summary-card-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-  - [Author](#author)
+- [Frontend Mentor - Solution de la carte de résumé de commande](#frontend-mentor---solution-de-la-carte-de-résumé-de-commande)
+  - [Table des matières](#table-des-matières)
+  - [Aperçu](#aperçu)
+    - [Le défi](#le-défi)
+    - [Capture d'écran](#capture-décran)
+    - [Liens](#liens)
+  - [Mon processus](#mon-processus)
+    - [Construit avec](#construit-avec)
+    - [Fonctionnalités implémentées](#fonctionnalités-implémentées)
+    - [Ce que j'ai appris](#ce-que-jai-appris)
+  - [Auteur](#auteur)
 
-## Overview
+## Aperçu
 
-### The challenge
+### Le défi
 
-Users should be able to:
+Les utilisateurs doivent pouvoir :
 
-- See hover states for interactive elements
+- Voir les états de survol pour les éléments interactifs
+- Visualiser le layout optimal selon la taille de leur appareil
 
-### Screenshot
+### Capture d'écran
 
-![My Solution](/my-solution.png)
+![Ma Solution](/my-solution.png)
 
-### Links
+### Liens
 
-- Solution URL: https://github.com/kevinbdx35/frontendmentor-challenges-1
-- Live Site URL: https://kevinbdx35.github.io/frontendmentor-challenges-1-newbie/
+- URL de la solution : https://github.com/kevinbdx35/frontendmentor-challenges-1
+- URL du site en direct : https://kevinbdx35.github.io/frontendmentor-challenges-1-newbie/
 
-## My process
+## Mon processus
 
-### Built with
+### Construit avec
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Balisage HTML5 sémantique
+- Propriétés personnalisées CSS
 - Flexbox
+- Design responsive (mobile-first)
+- Transitions CSS fluides
 
+### Fonctionnalités implémentées
 
-## Author
+- ✅ États de survol pour tous les éléments interactifs
+- ✅ Design entièrement responsive (mobile/desktop)
+- ✅ Transitions CSS pour une meilleure expérience utilisateur
+- ✅ Optimisation pour les écrans mobiles (375px) et desktop (1440px)
+- ✅ Background patterns adaptatifs selon la taille d'écran
 
-- Website - [Kevinb](https://kevinbdx35.github.io/kevinb/)
+### Ce que j'ai appris
+
+- Implémentation d'états hover/focus accessibles
+- Gestion responsive avec les media queries
+- Utilisation des transitions CSS pour améliorer l'UX
+- Optimisation pour différentes tailles d'écran
+
+## Auteur
+
+- Site web - [Kevinb](https://kevinbdx35.github.io/kevinb/)
 - Frontend Mentor - [@kevinbdx35](https://www.frontendmentor.io/profile/kevinbdx35)
 

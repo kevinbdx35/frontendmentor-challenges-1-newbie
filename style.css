@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
@@ -28,6 +32,12 @@ header {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  header {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -37,6 +47,7 @@ img {
   border-radius: 10px;
   overflow: hidden;
   width: 400px;
+  max-width: 90vw;
 }
 
 .card-header {
@@ -113,6 +124,12 @@ img {
   width: 100%;
   margin: 30px 0;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: hsl(245, 75%, 60%);
+  box-shadow: 0 8px 20px hsl(245, 75%, 52%);
 }
 
 .btn:active {
@@ -131,6 +148,23 @@ img {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.cancel a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.change a {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.change a:hover {
+  color: hsl(245, 75%, 60%);
+  text-decoration: none;
 }
 
 #plan {
@@ -141,4 +175,34 @@ img {
 #price {
   color: hsl(224, 23%, 55%);
   font-size: 16px;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 350px;
+  }
+  
+  .card-content {
+    padding: 25px;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .card-excerpt {
+    font-size: 15px;
+    line-height: 1.4rem;
+  }
+  
+  .author {
+    height: 70px;
+    padding: 8px;
+  }
+  
+  .btn {
+    height: 45px;
+    margin: 25px 0;
+  }
 }
