@@ -1,66 +1,69 @@
-# Frontend Mentor - Solution de la carte de résumé de commande
+# Frontend Mentor — Order Summary Card
 
-Ceci est une solution au [défi Order summary card sur Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Les défis Frontend Mentor vous aident à améliorer vos compétences en codage en créant des projets réalistes.
+A solution to the [Order Summary Card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-## Table des matières
+## Table of Contents
 
-- [Frontend Mentor - Solution de la carte de résumé de commande](#frontend-mentor---solution-de-la-carte-de-résumé-de-commande)
-  - [Table des matières](#table-des-matières)
-  - [Aperçu](#aperçu)
-    - [Le défi](#le-défi)
-    - [Capture d'écran](#capture-décran)
-    - [Liens](#liens)
-  - [Mon processus](#mon-processus)
-    - [Construit avec](#construit-avec)
-    - [Fonctionnalités implémentées](#fonctionnalités-implémentées)
-    - [Ce que j'ai appris](#ce-que-jai-appris)
-  - [Auteur](#auteur)
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [Features](#features)
+  - [Improvements](#improvements)
+- [Author](#author)
 
-## Aperçu
+## Overview
 
-### Le défi
+### The Challenge
 
-Les utilisateurs doivent pouvoir :
+Users should be able to:
 
-- Voir les états de survol pour les éléments interactifs
-- Visualiser le layout optimal selon la taille de leur appareil
+- View hover states for all interactive elements
+- See the optimal layout depending on their device screen size
 
-### Capture d'écran
+### Screenshot
 
-![Ma Solution](/my-solution.png)
+![My Solution](/my-solution.png)
 
-### Liens
+### Links
 
-- URL de la solution : https://github.com/kevinbdx35/frontendmentor-challenges-1
-- URL du site en direct : https://kevinbdx35.github.io/frontendmentor-challenges-1-newbie/
+- Solution URL: https://github.com/kevinbdx35/frontendmentor-challenges-1
+- Live Site URL: https://kevinbdx35.github.io/frontendmentor-challenges-1-newbie/
 
-## Mon processus
+## My Process
 
-### Construit avec
+### Built With
 
-- Balisage HTML5 sémantique
-- Propriétés personnalisées CSS
+- Semantic HTML5
+- CSS custom properties
 - Flexbox
-- Design responsive (mobile-first)
-- Transitions CSS fluides
+- Mobile-first responsive design
 
-### Fonctionnalités implémentées
+### Features
 
-- ✅ États de survol pour tous les éléments interactifs
-- ✅ Design entièrement responsive (mobile/desktop)
-- ✅ Transitions CSS pour une meilleure expérience utilisateur
-- ✅ Optimisation pour les écrans mobiles (375px) et desktop (1440px)
-- ✅ Background patterns adaptatifs selon la taille d'écran
+- Hover and focus states on all interactive elements
+- Fully responsive (375px mobile → 1440px desktop)
+- Smooth CSS transitions
 
-### Ce que j'ai appris
+### Improvements
 
-- Implémentation d'états hover/focus accessibles
-- Gestion responsive avec les media queries
-- Utilisation des transitions CSS pour améliorer l'UX
-- Optimisation pour différentes tailles d'écran
+- `<header>&nbsp;</header>` → `<div class="bg-pattern" aria-hidden="true">` (correct semantics)
+- `<h3>` → `<h1>` (page heading hierarchy)
+- `<small id="price">` → `<span class="plan-price">` (correct semantic element)
+- `.btn:focus { outline: 0 }` → `focus-visible` with a visible outline
+- `body { height: 100vh; overflow: hidden }` → `min-height: 100vh`
+- Removed fixed `.card-title { height: 20px }`
+- Added CSS custom properties (7 variables)
+- Renamed `.author` → `.plan-box` for clarity
+- Removed `X-UA-Compatible` meta tag
 
-## Auteur
+## Author
 
-- Site web - [Kevinb](https://kevinbdx35.github.io/kevinb/)
-- Frontend Mentor - [@kevinbdx35](https://www.frontendmentor.io/profile/kevinbdx35)
+- Website — [Kévin B.](https://kevinbdx35.github.io/kevinb/)
+- Frontend Mentor — [@kevinbdx35](https://www.frontendmentor.io/profile/kevinbdx35)
 
+## License
+
+MIT

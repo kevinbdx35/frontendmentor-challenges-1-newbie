@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+:root {
+  --bg-color:    hsl(225, 100%, 94%);
+  --light-bg:    hsl(225, 100%, 98%);
+  --white:       hsl(0, 0%, 100%);
+  --dark-blue:   hsl(223, 47%, 23%);
+  --muted-blue:  hsl(224, 23%, 55%);
+  --purple:      hsl(245, 75%, 52%);
+  --purple-hover:hsl(245, 75%, 60%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,18 +19,17 @@ html {
 }
 
 body {
-  background-color: hsl(225, 100%, 94%);
+  background-color: var(--bg-color);
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
 }
 
-header {
+.bg-pattern {
   width: 100vw;
   height: 50vh;
   background-image: url(images/pattern-background-desktop.svg);
@@ -33,7 +42,7 @@ header {
 }
 
 @media (max-width: 768px) {
-  header {
+  .bg-pattern {
     background-image: url(images/pattern-background-mobile.svg);
   }
 }
@@ -61,29 +70,28 @@ img {
 }
 
 .card-content {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 30px;
 }
 
 .card-title {
-  height: 20px;
   margin: 0;
   margin-bottom: 30px;
-  color: hsl(223, 47%, 23%);
+  color: var(--dark-blue);
   text-align: center;
   font-size: 25px;
   font-weight: 900;
 }
 
 .card-excerpt {
-  color: hsl(224, 23%, 55%);
+  color: var(--muted-blue);
   text-align: center;
   line-height: 1.5rem;
   margin: 10px 0 20px;
 }
 
-.author {
-  background-color: hsl(225, 100%, 98%);
+.plan-box {
+  background-color: var(--light-bg);
   border: 0;
   border-radius: 10px;
   display: flex;
@@ -101,106 +109,106 @@ img {
   width: 40px;
 }
 
-.author-info {
+.plan-info {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  width: 100px;
 }
 
-.author-info small {
-  color: #aaa;
+.plan-info .plan-price {
+  color: var(--muted-blue);
   margin-top: 5px;
+  font-size: 16px;
 }
 
 .btn {
-  background-color: hsl(245, 75%, 52%);
+  background-color: var(--purple);
   border: 0;
   border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 5px 15px hsl(245, 75%, 52%);
+  color: var(--white);
+  box-shadow: 0 5px 15px var(--purple);
   font-size: 16px;
   height: 40px;
   width: 100%;
   margin: 30px 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-  background-color: hsl(245, 75%, 60%);
-  box-shadow: 0 8px 20px hsl(245, 75%, 52%);
+  background-color: var(--purple-hover);
+  box-shadow: 0 8px 20px var(--purple);
 }
 
 .btn:active {
   transform: scale(0.98);
 }
 
-.btn:focus {
-  outline: 0;
+.btn:focus-visible {
+  outline: 3px solid var(--dark-blue);
+  outline-offset: 2px;
+}
+
+.cancel {
+  text-align: center;
+  margin: 0;
 }
 
 .cancel a {
-  display: flex;
-  justify-content: center;
   text-decoration: none;
-  color: hsl(224, 23%, 55%);
+  color: var(--muted-blue);
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
   transition: color 0.2s ease;
+  display: inline-block;
 }
 
 .cancel a:hover {
-  color: hsl(223, 47%, 23%);
+  color: var(--dark-blue);
 }
 
 .change a {
-  color: hsl(245, 75%, 52%);
+  color: var(--purple);
   text-decoration: underline;
   font-weight: bold;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 .change a:hover {
-  color: hsl(245, 75%, 60%);
+  color: var(--purple-hover);
   text-decoration: none;
 }
 
-#plan {
-  color: hsl(223, 47%, 23%);
+.plan {
+  color: var(--dark-blue);
   font-weight: 900;
-}
-
-#price {
-  color: hsl(224, 23%, 55%);
-  font-size: 16px;
 }
 
 @media (max-width: 375px) {
   .card {
     width: 350px;
   }
-  
+
   .card-content {
     padding: 25px;
   }
-  
+
   .card-title {
     font-size: 22px;
     margin-bottom: 20px;
   }
-  
+
   .card-excerpt {
     font-size: 15px;
     line-height: 1.4rem;
   }
-  
-  .author {
+
+  .plan-box {
     height: 70px;
     padding: 8px;
   }
-  
+
   .btn {
     height: 45px;
     margin: 25px 0;
